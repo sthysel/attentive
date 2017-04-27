@@ -11,8 +11,8 @@ Example
 *******
 
 
-.. literalinclude:: example.py
-
+.. include:: example.py
+   :literal:
    :encoding: utf-8
 
 
