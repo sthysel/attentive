@@ -37,3 +37,22 @@ Example
         while not stopper.is_set():
             stopper.wait(1)
 
+
+
+Example Run: ::
+
+    Trump has quickened
+    Wang has quickened
+    Erdoğan has quickened
+    Wang throws a 6
+    Erdoğan throws a 3
+    Wang throws a 2
+    Trump throws a 4
+    Trump throws a 3
+    ^CErdoğan throws a 1
+    Erdoğan expires
+    Wang throws a 3
+    Wang expires
+    Trump throws a 6
+    Trump expires
+
