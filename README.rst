@@ -11,7 +11,7 @@ Example
 *******
 
 
-.. source::
+.. code::
 
 
     from attentive import StoppableThread, set_signal_handler
