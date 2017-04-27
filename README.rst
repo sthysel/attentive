@@ -10,7 +10,9 @@ Install
 Example
 *******
 
+
 .. literalinclude:: example.py
+
    :encoding: utf-8
 
 
