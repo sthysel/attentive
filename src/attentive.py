@@ -1,0 +1,69 @@
+from __future__ import absolute_import
+
+import logging
+import signal
+import sys
+import threading
+from contextlib import contextmanager
+
+
+logger = logging.getLogger(__name__)
+_stopper = threading.Event()
+
+
+def _signal_handler(signal, frame):
+    logger.info('signal {} received, stopping.'.format(signal))
+    _stopper.set()
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, _signal_handler)
+signal.signal(signal.SIGTERM, _signal_handler)
+
+
+def set_signal_handler():
+    return _stopper
+
+
+@contextmanager
+def managed_thread(thread):
+    try:
+        thread.start()
+        yield thread
+    finally:
+        thread.stop()
+        thread.join()
+
+
+@contextmanager
+def managed_process(process):
+    try:
+        yield process
+    finally:
+        process.terminate()
+
+
+class StoppableThread(threading.Thread):
+    def __init__(self):
+        super(StoppableThread, self).__init__()
+        self._stop = threading.Event()
+
+    def __enter__(self):
+        self.start()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.stop()
+        self.join()
+        return False
+
+    def stop(self):
+        logger.info('stopping thread class : {0}'.format(self.__class__.__name__))
+        self._stop.set()
+
+    @property
+    def stopped(self):
+        return self._stop.is_set()
+
+    def sleep(self, seconds):
+        self._stop.wait(seconds)
