@@ -46,7 +46,7 @@ def managed_process(process):
 class StoppableThread(threading.Thread):
     def __init__(self):
         super(StoppableThread, self).__init__()
-        self._stop = threading.Event()
+        self._stop_event = threading.Event()
 
     def __enter__(self):
         self.start()
@@ -59,11 +59,11 @@ class StoppableThread(threading.Thread):
 
     def stop(self):
         logger.info('stopping thread class : {0}'.format(self.__class__.__name__))
-        self._stop.set()
+        self._stop_event.set()
 
     @property
     def stopped(self):
-        return self._stop.is_set()
+        return self._stop_event.is_set()
 
     def sleep(self, seconds):
-        self._stop.wait(seconds)
+        self._stop_event.wait(seconds)
