@@ -1,6 +1,16 @@
 Attentive provides an attentive thread
 ======================================
 
+
+Use *attentive* if you need to wire up a some worker threads that needs to cleanly 
+shut themselves down on a SIG_INT or SIG_TERM. 
+
+*StoppableThread* is a context managed thread that lives on while in context. Once it exists 
+context it sets its internal stopped flag that are periodically checked for state. This signals 
+thread state allowing the thread to cleanly exit.
+
+External state is controlled by a signal event, exiting the main context loop.
+
 Install
 *******
 
