@@ -11,6 +11,9 @@ thread state allowing the thread to cleanly exit.
 
 External state is controlled by a signal event, exiting the main context loop.
 
+Internally use the StoppableThread.sleep() method that is interrupted when stop()ed during
+sleep.
+
 Install
 *******
 
