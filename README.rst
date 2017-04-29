@@ -54,18 +54,28 @@ Example
 
 Example Run: ::
 
-    Trump has quickened
-    Wang has quickened
-    Erdoğan has quickened
-    Wang throws a 6
-    Erdoğan throws a 3
-    Wang throws a 2
-    Trump throws a 4
-    Trump throws a 3
-    ^CErdoğan throws a 1
-    Erdoğan expires
-    Wang throws a 3
-    Wang expires
-    Trump throws a 6
-    Trump expires
+    🚼Trump has quickened
+    🚼Wang has quickened
+    🚼Erdoğan has quickened
+    Wang throws a ☣ 
+    Trump throws a ☢ 
+    Erdoğan throws a ☣ 
+    Wang throws a ☣ 
+    Trump throws a 🍭
+    Trump throws a ☣ 
+    Erdoğan throws a 🍼
+    Trump throws a 🍭
+    Wang throws a ☣ 
+    Trump throws a ☣ 
+    Erdoğan throws a 🍭
+    Trump throws a ☣ 
+    Erdoğan throws a ☣ 
+    Erdoğan throws a ☢ 
+    Trump throws a ☣ 
+    ^CErdoğan throws a 🍼
+    ☠  Erdoğan expires
+    Wang throws a ☣ 
+    ☠  Wang expires
+    Trump throws a 🍼
+    ☠  Trump expires
 

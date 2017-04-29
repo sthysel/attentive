@@ -3,6 +3,7 @@
 from attentive import StoppableThread, set_signal_handler
 from random import randint
 
+toys = ('☢ ', '☣ ', '🍭', '🍼', )
 
 class Man(StoppableThread):
     def __init__(self, name):
@@ -10,12 +11,12 @@ class Man(StoppableThread):
         self.name = name
 
     def run(self):
-        print('{} has quickened'.format(self.name))
+        print('🚼{} has quickened'.format(self.name))
         while not self.stopped:
             self.sleep(randint(1, 10))
-            print('{} throws a {}'.format(self.name, randint(1, 6)))
+            print('{} throws a {}'.format(self.name, toys[randint(0, len(toys)) - 1]))
 
-        print('{} expires'.format(self.name))
+        print('☠  {} expires'.format(self.name))
 
 
 if __name__ == '__main__':
