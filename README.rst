@@ -42,16 +42,9 @@ Example Run: ::
     Trump throws a ☢ 
     Erdoğan throws a ☣ 
     Wang throws a ☣ 
-    Trump throws a 🍭
-    Trump throws a ☣ 
-    Erdoğan throws a 🍼
-    Trump throws a 🍭
     Wang throws a ☣ 
-    Trump throws a ☣ 
     Erdoğan throws a 🍭
-    Trump throws a ☣ 
     Erdoğan throws a ☣ 
-    Erdoğan throws a ☢ 
     Trump throws a ☣ 
     ^CErdoğan throws a 🍼
     ☠  Erdoğan expires
