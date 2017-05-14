@@ -1,14 +1,13 @@
 Attentive provides an attentive thread
 ======================================
 
-.. image:: https://github.com/sthysel/attentive/blob/master/docs/attentive.jpg?raw=true
-
 
 .. image:: https://readthedocs.org/projects/attentive/badge/?version=latest
+   :target: http://attentive.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
 
-    :target: http://attentive.readthedocs.io/en/latest/?badge=latest
-    :alt: Documentation Status
 
+.. image:: https://github.com/sthysel/attentive/blob/master/docs/attentive.jpg?raw=true
 
 
 .. code:: python 
@@ -39,7 +38,11 @@ Attentive provides an attentive thread
 
 
 
-Example Run: ::
+Example Run
+***********
+
+.. code:: bash
+
 
     🚼Trump has quickened
     🚼Wang has quickened
@@ -93,4 +96,4 @@ Install from source
 Versioning
 ==========
 
-Current version is 0.1.0
+Current version is 0.1.1
