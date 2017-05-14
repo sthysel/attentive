@@ -3,6 +3,14 @@ Attentive provides an attentive thread
 
 .. image:: https://github.com/sthysel/attentive/blob/master/docs/attentive.jpg?raw=true
 
+
+.. image:: https://readthedocs.org/projects/attentive/badge/?version=latest
+
+    :target: http://attentive.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+
+
 .. code:: python 
 
 
