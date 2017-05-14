@@ -22,7 +22,7 @@ setup(
     install_requires=[],
     author='sthysel',
     author_email='sthysel@gmail.com',
-    url='https://github.com/sthysel/bomshell',
+    url='https://github.com/sthysel/attentive',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],

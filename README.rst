@@ -68,9 +68,23 @@ Internally use the StoppableThread.sleep() method that is interrupted when stop(
 sleep.
 
 Install
-*******
+=======
 
-``pip install .``
+Install from pypi
+
+.. code::
+
+   $ pip install knobs
+
+Install from source
+
+.. code::
+
+   $ pip install .
 
 
 
+Versioning
+==========
+
+Current version is 0.1.0
