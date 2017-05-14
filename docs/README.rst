@@ -1,9 +1,7 @@
 Attentive provides an attentive thread
 ======================================
 
-
-.. image:: /pics/attentive.jpg
-
+.. image:: https://github.com/sthysel/attentive/blob/master/docs/attentive.jpg?raw=true
 
 .. code:: python 
 
