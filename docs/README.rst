@@ -83,7 +83,7 @@ Install from pypi
 
 .. code::
 
-   $ pip install knobs
+   $ pip install attentive
 
 Install from source
 
