@@ -16,7 +16,7 @@ def read(*names, **kwargs):
 setup(
     name='attentive',
     license='GPLv2',
-    version='0.1.2',
+    version='0.1.3',
     description='Stoppable thread with common stop signalling',
     long_description=read('README.rst'),
     install_requires=[],
