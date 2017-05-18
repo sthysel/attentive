@@ -96,4 +96,4 @@ Install from source
 Versioning
 ==========
 
-Current version is 0.1.1
+Current version is 0.1.2
