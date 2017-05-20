@@ -1,27 +1,10 @@
 from __future__ import absolute_import
 
 import logging
-import signal
-import sys
 import threading
 from contextlib import contextmanager
 
 logger = logging.getLogger(__name__)
-_stopper = threading.Event()
-
-
-def _signal_handler(signal, frame):
-    logger.info('signal {} received, stopping.'.format(signal))
-    _stopper.set()
-    sys.exit(0)
-
-
-signal.signal(signal.SIGINT, _signal_handler)
-signal.signal(signal.SIGTERM, _signal_handler)
-
-
-def set_signal_handler():
-    return _stopper
 
 
 @contextmanager

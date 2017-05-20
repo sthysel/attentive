@@ -13,7 +13,7 @@ Attentive provides an attentive thread
 .. code:: python 
 
 
-    from attentive import StoppableThread, set_signal_handler
+    from attentive import StoppableThread, quit
     from random import randint
 
 
@@ -31,10 +31,9 @@ Attentive provides an attentive thread
             print('{} expires'.format(self.name))
 
 
-    stopper = set_signal_handler()
     with Man('Trump'), Man('Wang'), Man('Erdoğan'):
-        while not stopper.is_set():
-            stopper.wait(1)
+        while not quit.is_set():
+            quit.wait(1)
 
 
 
@@ -96,4 +95,4 @@ Install from source
 Versioning
 ==========
 
-Current version is 0.1.2
+Current version is 0.1.3
