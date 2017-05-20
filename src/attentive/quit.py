@@ -6,13 +6,16 @@ import threading
 
 logger = logging.getLogger(__name__)
 
-quit = threading.Event()
+quitevent = threading.Event()
+
+default_signals = [signal.SIGINT, signal.SIGTERM]
 
 
-def _signal_handler(signal, frame):
+def _quit_handler(signal, frame):
     logger.info('signal {} received, stopping.'.format(signal))
-    quit.set()
+    quitevent.set()
 
 
-signal.signal(signal.SIGINT, _signal_handler)
-signal.signal(signal.SIGTERM, _signal_handler)
+for _sig in default_signals:
+    signal.signal(_sig, _quit_handler)
+

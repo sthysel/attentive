@@ -1,2 +1,2 @@
 from .attentive import *
-from .quit import quit
+from .quit import quitevent
