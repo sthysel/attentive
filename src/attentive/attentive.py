@@ -47,7 +47,7 @@ class StoppableThread(threading.Thread):
         return False
 
     def stop(self):
-        logger.info('stopping thread class : {0}'.format(self.__class__.__name__))
+        logger.debug('stopping thread class : {0}'.format(self.__class__.__name__))
         self._stop_event.set()
 
     @property
