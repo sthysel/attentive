@@ -1,4 +1,4 @@
-Attentive provides an attentive thread
+
 ======================================
 
 
@@ -95,4 +95,4 @@ Install from source
 Versioning
 ==========
 
-Current version is 0.1.3
+Current version is 0.1.4
